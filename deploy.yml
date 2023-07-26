@@ -8,7 +8,6 @@
     stat:
       path: /usr/share/tomcat/webapps/hello-world-servlet-example.war
     register: stat_result
-
   - name: Delete the war file, if it exist already
     file:
       path: /usr/share/tomcat/webapps/hello-world-servlet-example.war
