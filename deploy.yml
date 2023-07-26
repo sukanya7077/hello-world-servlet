@@ -26,6 +26,6 @@
     get_url:
        url:  http://3.128.87.109:8081/service/rest/v1/search/assets/download?sort=version&repository=maven-releases&maven.groupId=com.geekcap.vmturbo&maven.artifactId=hello-world-servlet-example&maven.baseVersion=artifactversion&maven.extension=war
        dest: /usr/share/tomcat/webapps/hello-world-servlet-example.war
-       mode: 0700
+       mode: '0700'
   - name: Start Tomcat
     service: name=tomcat state=started
