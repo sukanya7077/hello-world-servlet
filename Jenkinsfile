@@ -63,7 +63,7 @@ stages {
     
      stage('Update Artifact Version') {
       steps {
-        sh label: '', script: '''sed -i s/version/$BUILD_NUMBER/ deploy.yml'''
+        sh label: '', script: '''sed -i s/artifactversion/$BUILD_NUMBER/ deploy.yml'''
       }
  }
      stage('Deploy War') {
